@@ -2,6 +2,7 @@ import { App } from './App';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { FirstApp } from './firstApp';
+import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>

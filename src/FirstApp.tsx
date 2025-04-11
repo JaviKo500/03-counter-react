@@ -23,7 +23,7 @@ export const FirstApp = () => {
       <p>I live in { person.city }</p>
       <button onClick={ () => add() }>Click me { counter }</button>
       <br />
-      <code>{ JSON.stringify(person) }</code>
+      {/* <code>{ JSON.stringify(person) }</code> */}
     </>
   );
 }
