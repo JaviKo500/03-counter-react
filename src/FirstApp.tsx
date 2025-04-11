@@ -1,6 +1,11 @@
 
 export const FirstApp = () => {
   return (
-    <div>first App Javiko500</div>
-  )
+    <>
+      <h1>
+        first App Javiko500
+      </h1>
+      <p>I'm subtitle</p>
+    </>
+  );
 }
