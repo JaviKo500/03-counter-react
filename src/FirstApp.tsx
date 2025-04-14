@@ -12,12 +12,18 @@ const add = () => {
   return counter++;
 }
 
-export const FirstApp = () => {
+interface Props {
+  title: string;
+  subtitle?: string;
+}
+
+export const FirstApp = ( { title, subtitle } : Props ) => {
   return (
     <>
       <h1>
-        Hello
+        { title }
       </h1>
+      <h3>{ subtitle }</h3>
       <p>I'm { person.name }</p>
       <p>My age is { person.age } in { currentYear() }</p>
       <p>I live in { person.city }</p>
