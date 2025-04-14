@@ -14,13 +14,14 @@ const add = () => {
 
 interface Props {
   title: string;
+  showTitle: boolean;
   subtitle?: string;
 }
 
-export const FirstApp = ( { title, subtitle } : Props ) => {
+export const FirstApp = ( { title, subtitle, showTitle = false } : Props ) => {
   return (
     <>
-      <h1>
+      <h1 style={ { display: showTitle ? 'block' : 'none' } }>
         { title }
       </h1>
       <h3>{ subtitle }</h3>
