@@ -1,17 +1,20 @@
+import { useState } from 'react';
+
 interface Props {
   value: number;
 }
 
-const handleAdd = () => {
-  console.log('<--------------- JK CounterApp --------------->');
-  console.log('handleAdd');
-}
 
 export const CounterApp = ( { value } : Props ) => {
+  const [ counter, setCounter ] = useState( value );
+  const handleAdd = () => {
+    setCounter( counter + 1 );
+    // setCounter( (c) => c + 1 );
+  }
   return (
     <>
       <h1>Counter App</h1>
-      <h2>{ value }</h2>
+      <h2>{ counter }</h2>
       <button
         onClick={ handleAdd }
       >
