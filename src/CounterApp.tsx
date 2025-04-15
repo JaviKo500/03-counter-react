@@ -11,6 +11,13 @@ export const CounterApp = ( { value } : Props ) => {
     setCounter( counter + 1 );
     // setCounter( (c) => c + 1 );
   }
+  const handleSubtract = () => {
+    setCounter( counter - 1 );
+    // setCounter( (c) => c + 1 );
+  }
+  const handleReset = () => {
+    setCounter( value );
+  }
   return (
     <>
       <h1>Counter App</h1>
@@ -20,8 +27,15 @@ export const CounterApp = ( { value } : Props ) => {
       >
         +1
       </button>
-      <button>
+      <button
+        onClick={ handleSubtract }
+      >
         -1
+      </button>
+      <button
+        onClick={ handleReset }
+      >
+        Reset
       </button>
     </>
   )
