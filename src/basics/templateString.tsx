@@ -11,4 +11,4 @@ export const templateString = () => {
   console.log(`Greeting: ${greeting(name)}`);
 }
 
-const greeting = (name: string)  => `Hello World ${name}`;
+export const greeting = (name: string)  => `Hello World ${name}`;
