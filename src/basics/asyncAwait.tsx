@@ -5,11 +5,9 @@ export const getImage = async () => {
       `${API_URL}?api_key=${API_KEY}`
     );
     const {data} = await response.json();
-    const { url } = data.images.original;
+    const { url } = data?.images?.original ?? {};
     return url;
-  } catch (error: any) {
-    console.log('<--------------- JK AsyncAwait --------------->');
-    console.log(error?.message);
+  } catch  {
     return 'Not found image';
   }
 }
