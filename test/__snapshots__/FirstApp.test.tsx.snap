@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FirstApp.test check match with snapshot 1`] = `
+<div>
+  <h1
+    style="display: block;"
+  >
+    Hello World
+  </h1>
+  <h3 />
+  <p>
+    I'm 
+    Javiko500
+  </p>
+  <p>
+    My age is 
+    30
+     in 
+    2025
+  </p>
+  <p>
+    I live in 
+    Santiago
+  </p>
+  <button>
+    Click me 
+    0
+  </button>
+  <br />
+</div>
+`;
