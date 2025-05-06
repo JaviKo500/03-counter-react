@@ -21,7 +21,7 @@ interface Props {
 export const FirstApp = ( { title, subtitle, showTitle = false } : Props ) => {
   return (
     <>
-      <h1 style={ { display: showTitle ? 'block' : 'none' } }>
+      <h1 data-testid="test-title"  style={ { display: showTitle ? 'block' : 'none' } }>
         { title }
       </h1>
       <h3>{ subtitle }</h3>
